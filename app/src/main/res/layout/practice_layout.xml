@@ -52,7 +52,6 @@
                         android:text="Cost: 7000 BDT"
                         android:textSize="15dp"
                         android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="?android:attr/textColorSecondary"
                         />
 
                 </LinearLayout>
@@ -127,7 +126,6 @@
                         android:text="Cost: 5000 BDT"
                         android:textSize="15dp"
                         android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="?android:attr/textColorSecondary"
                         />
 
                 </LinearLayout>
@@ -202,7 +200,6 @@
                         android:text="Cost: 4000 BDT"
                         android:textSize="15dp"
                         android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="?android:attr/textColorSecondary"
                         />
 
                 </LinearLayout>
@@ -277,7 +274,6 @@
                         android:text="Cost: 4000 BDT"
                         android:textSize="15dp"
                         android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="?android:attr/textColorSecondary"
                         />
 
                 </LinearLayout>
