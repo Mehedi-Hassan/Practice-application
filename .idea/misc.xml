@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Attachment/Android/Practice/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3675" />
+        <entry key="..\:/Attachment/Android/Practice/app/src/main/res/drawable/cup.xml" value="0.1" />
+        <entry key="..\:/Attachment/Android/Practice/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3675" />
+        <entry key="..\:/Attachment/Android/Practice/app/src/main/res/drawable/ic_main_bg_1.xml" value="0.215" />
+        <entry key="..\:/Attachment/Android/Practice/app/src/main/res/drawable/ic_profile1.xml" value="0.1" />
         <entry key="..\:/Attachment/Android/Practice/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Attachment/Android/Practice/app/src/main/res/layout/leader_board.xml" value="0.25" />
         <entry key="..\:/Attachment/Android/Practice/app/src/main/res/layout/practice_layout.xml" value="0.33" />
       </map>
     </option>

@@ -7,4 +7,16 @@
     <string name="hint_confirm_password">Enter Password Again</string>
     <string name="register">Register</string>
     <string name="password_helper">Can\'t be less than 8 characters</string>
+    <string name="ldrBrd">লিডার বোর্ড</string>
+    <string name="myName">শহিদুল ইসলাম শিশির</string>
+    <string name="totalPointText">মোট পয়েন্ট</string>
+    <string name="totalPoint">২০০০</string>
+    <string name="positionText">অবস্থান</string>
+    <string name="position">৫ম</string>
+    <string name="scoringDayText">স্কোরিং দিন</string>
+    <string name="scoringDay">৫ম দিন</string>
+    <string name="scoringTimeText">স্কোরিং সময়</string>
+    <string name="scoringTime">১০ঃ৪৫ঃ৩০</string>
+
+
 </resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentBox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg_1"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ldrBrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/ldrBrd"
+            android:textColor="#2B1875"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@id/line1"
+            app:layout_constraintEnd_toStartOf="@+id/cup"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/cup"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/cup"
+            app:layout_constraintBottom_toBottomOf="@id/ldrBrd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ldrBrd"
+            app:layout_constraintTop_toTopOf="@id/ldrBrd">
+
+        </ImageView>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#CDD4E5"
+            app:layout_constraintTop_toBottomOf="@id/ldrBrd">
+
+        </View>
+
+        <ImageView
+            android:id="@+id/myProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/line1"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/myName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/myName"
+            android:textSize="20sp"
+            android:textColor="#4C5465"
+            app:layout_constraintTop_toTopOf="@id/myProfile"
+            app:layout_constraintBottom_toBottomOf="@id/myProfile"
+            app:layout_constraintStart_toEndOf="@id/myProfile"
+            android:layout_marginStart="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/totalPointText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalPointText"
+            android:textSize="18sp"
+            android:textColor="#4C5465"
+            app:layout_constraintTop_toTopOf="@id/myProfile"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/totalPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalPoint"
+            android:textSize="20sp"
+            android:textColor="#D1409F"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/totalPointText"
+            app:layout_constraintEnd_toEndOf="@id/totalPointText"
+            app:layout_constraintBottom_toBottomOf="@id/myProfile">
+
+        </TextView>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#CDD4E5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/myProfile">
+
+        </View>
+
+        <TextView
+            android:id="@+id/positionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/positionText"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            android:textColor="#4C5465"
+            app:layout_constraintTop_toBottomOf="@id/line2"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/position"
+            android:textSize="20sp"
+            android:textColor="#D1409F"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="@id/positionText"
+            app:layout_constraintEnd_toEndOf="@id/positionText"
+            app:layout_constraintTop_toBottomOf="@id/positionText"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/scoringDayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/scoringDayText"
+            android:textSize="18sp"
+            android:textColor="#4C5465"
+            app:layout_constraintEnd_toStartOf="@id/scoringTimeText"
+            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintStart_toEndOf="@id/positionText"
+            app:layout_constraintTop_toBottomOf="@id/line2">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/scoringDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scoringDay"
+            android:textSize="20sp"
+            android:textColor="#D1409F"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="@id/scoringDayText"
+            app:layout_constraintEnd_toEndOf="@id/scoringDayText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/scoringTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scoringTimeText"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"
+            android:textColor="#4C5465"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/scoringTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scoringTime"
+            android:textSize="20sp"
+            android:textColor="#D1409F"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="@id/scoringTimeText"
+            app:layout_constraintEnd_toEndOf="@id/scoringTimeText"
+            app:layout_constraintTop_toBottomOf="@id/scoringTimeText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBox"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+        </ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
