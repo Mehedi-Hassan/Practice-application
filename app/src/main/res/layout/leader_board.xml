@@ -4,9 +4,8 @@
     android:id="@+id/parentBox"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/main_bg_1"
-    >
+    android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topBox"
@@ -60,11 +59,11 @@
             android:id="@+id/myProfile"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/profile1"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/line1"
-            app:layout_constraintStart_toStartOf="parent">
+            android:src="@drawable/profile1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line1">
 
         </ImageView>
 
@@ -72,14 +71,14 @@
             android:id="@+id/myName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginEnd="5dp"
             android:text="@string/myName"
-            android:textSize="20sp"
             android:textColor="#4C5465"
-            app:layout_constraintTop_toTopOf="@id/myProfile"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@id/myProfile"
             app:layout_constraintStart_toEndOf="@id/myProfile"
-            android:layout_marginStart="10dp">
+            app:layout_constraintTop_toTopOf="@id/myProfile">
 
         </TextView>
 
@@ -88,10 +87,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/totalPointText"
-            android:textSize="18sp"
             android:textColor="#4C5465"
-            app:layout_constraintTop_toTopOf="@id/myProfile"
-            app:layout_constraintEnd_toEndOf="parent">
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/myProfile">
 
         </TextView>
 
@@ -100,12 +99,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/totalPoint"
-            android:textSize="20sp"
             android:textColor="#D1409F"
+            android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/totalPointText"
+            app:layout_constraintBottom_toBottomOf="@id/myProfile"
             app:layout_constraintEnd_toEndOf="@id/totalPointText"
-            app:layout_constraintBottom_toBottomOf="@id/myProfile">
+            app:layout_constraintTop_toBottomOf="@id/totalPointText">
 
         </TextView>
 
@@ -125,13 +124,13 @@
             android:id="@+id/positionText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/positionText"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/positionText"
             android:textColor="#4C5465"
-            app:layout_constraintTop_toBottomOf="@id/line2"
-            app:layout_constraintStart_toStartOf="parent">
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2">
 
         </TextView>
 
@@ -139,15 +138,15 @@
             android:id="@+id/position"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/position"
-            android:textSize="20sp"
-            android:textColor="#D1409F"
-            android:textStyle="bold"
             android:layout_marginBottom="10dp"
-            app:layout_constraintStart_toStartOf="@id/positionText"
+            android:text="@string/position"
+            android:textColor="#D1409F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/positionText"
-            app:layout_constraintTop_toBottomOf="@id/positionText"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintStart_toStartOf="@id/positionText"
+            app:layout_constraintTop_toBottomOf="@id/positionText">
 
         </TextView>
 
@@ -158,8 +157,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
             android:text="@string/scoringDayText"
-            android:textSize="18sp"
             android:textColor="#4C5465"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@id/scoringTimeText"
             app:layout_constraintHorizontal_bias="0.429"
             app:layout_constraintStart_toEndOf="@id/positionText"
@@ -171,15 +170,14 @@
             android:id="@+id/scoringDay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/scoringDay"
-            android:textSize="20sp"
-            android:textColor="#D1409F"
-            android:textStyle="bold"
             android:layout_marginBottom="10dp"
-            app:layout_constraintStart_toStartOf="@id/scoringDayText"
-            app:layout_constraintEnd_toEndOf="@id/scoringDayText"
+            android:text="@string/scoringDay"
+            android:textColor="#D1409F"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            >
+            app:layout_constraintEnd_toEndOf="@id/scoringDayText"
+            app:layout_constraintStart_toStartOf="@id/scoringDayText">
 
         </TextView>
 
@@ -188,14 +186,13 @@
             android:id="@+id/scoringTimeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/scoringTimeText"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:textSize="18sp"
+            android:text="@string/scoringTimeText"
             android:textColor="#4C5465"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/line2"
-            >
+            app:layout_constraintTop_toBottomOf="@id/line2">
 
         </TextView>
 
@@ -203,16 +200,15 @@
             android:id="@+id/scoringTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/scoringTime"
-            android:textSize="20sp"
-            android:textColor="#D1409F"
-            android:textStyle="bold"
             android:layout_marginBottom="10dp"
-            app:layout_constraintStart_toStartOf="@id/scoringTimeText"
-            app:layout_constraintEnd_toEndOf="@id/scoringTimeText"
-            app:layout_constraintTop_toBottomOf="@id/scoringTimeText"
+            android:text="@string/scoringTime"
+            android:textColor="#D1409F"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            >
+            app:layout_constraintEnd_toEndOf="@id/scoringTimeText"
+            app:layout_constraintStart_toStartOf="@id/scoringTimeText"
+            app:layout_constraintTop_toBottomOf="@id/scoringTimeText">
 
         </TextView>
 
@@ -223,18 +219,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topBox"
-        >
+        app:layout_constraintTop_toBottomOf="@id/topBox">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/profile2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            >
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
         </ImageView>
     </androidx.constraintlayout.widget.ConstraintLayout>
